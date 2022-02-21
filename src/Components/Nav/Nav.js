@@ -1,5 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { Menu, Dropdown, Button } from "antd";
+import { DownOutlined } from "@ant-design/icons";
 import "./Nav.css";
 
 const lngs = {
@@ -8,24 +10,27 @@ const lngs = {
 };
 
 const Nav = () => {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
+
+  const menu = (
+    <Menu>
+      {Object.keys(lngs).map((lng) => (
+        <Menu.Item key={lng} onClick={() => i18n.changeLanguage(lng)}>
+          <Button className="app_btn" type="submit">
+            {lngs[lng].nativeName}
+          </Button>
+        </Menu.Item>
+      ))}
+    </Menu>
+  );
 
   return (
     <div className="harambe_nav">
-      <div>
-        {Object.keys(lngs).map((lng) => (
-          <button
-            key={lng}
-            style={{
-              fontWeight: i18n.resolvedLanguage === lng ? "bold" : "normal",
-            }}
-            type="submit"
-            onClick={() => i18n.changeLanguage(lng)}
-          >
-            {lngs[lng].nativeName}
-          </button>
-        ))}
-      </div>
+      <Dropdown className="menus" overlay={menu} trigger={["click"]}>
+        <a className="ant-dropdown-link" onClick={(e) => e.preventDefault()}>
+          {t("navContent.changeLang")} <DownOutlined />
+        </a>
+      </Dropdown>
     </div>
   );
 };

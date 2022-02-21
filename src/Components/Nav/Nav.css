@@ -4,8 +4,19 @@
   padding: 0 2rem;
   min-height: 10vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 999 !important;
+}
+
+.menus {
+  color: wheat;
+  border: 1px solid wheat;
+  padding: 0.5rem;
+}
+
+.app_btn {
+  width: 100%;
 }

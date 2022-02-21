@@ -2,3 +2,14 @@
   min-height: 90vh;
   padding: 2rem;
 }
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.app_col {
+  padding-bottom: 1rem;
+}

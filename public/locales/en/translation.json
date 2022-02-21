@@ -1,5 +1,13 @@
 {
+  "navContent": {
+    "changeLang": "Change language"
+  },
   "mainContent": {
-    "title": "This is the title"
+    "title": "It is working!!",
+    "desc1": "My names are,",
+    "desc2": "I love music and food!"
+  },
+  "footer": {
+    "text": "Awesomity Lab is awesome"
   }
 }

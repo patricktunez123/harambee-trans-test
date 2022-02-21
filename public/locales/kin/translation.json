@@ -1,5 +1,13 @@
 {
+  "navContent": {
+    "changeLang": "Hindura ururimi"
+  },
   "mainContent": {
-    "title": "Uyu ni umutwe"
+    "title": "Birimo gukora !!",
+    "desc1": "Amazina yanjye ni,",
+    "desc2": "Nkunda umuziki n'ibiryo!"
+  },
+  "footer": {
+    "text": "Awesomity Lab ni nziza"
   }
 }
