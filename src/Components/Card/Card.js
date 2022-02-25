@@ -3,13 +3,19 @@ import { Card, Avatar } from "antd";
 import { useTranslation } from "react-i18next";
 import {
   EditOutlined,
-  EllipsisOutlined,
+  ArrowRightOutlined,
   SettingOutlined,
 } from "@ant-design/icons";
+import { useHistory } from "react-router-dom";
 
 const { Meta } = Card;
 
 const CardItem = ({ name }) => {
+  const history = useHistory();
+  const goTo = () => {
+    history.push("/other-page");
+  };
+
   const { t } = useTranslation();
   return (
     <Card
@@ -22,7 +28,7 @@ const CardItem = ({ name }) => {
       actions={[
         <SettingOutlined key="setting" />,
         <EditOutlined key="edit" />,
-        <EllipsisOutlined key="ellipsis" />,
+        <ArrowRightOutlined key="ellipsis" onClick={() => goTo()} />,
       ]}
     >
       <Meta

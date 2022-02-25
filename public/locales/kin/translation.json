@@ -5,7 +5,9 @@
   "mainContent": {
     "title": "Birimo gukora !!",
     "desc1": "Amazina yanjye ni,",
-    "desc2": "Nkunda umuziki n'ibiryo!"
+    "desc2": "Nkunda umuziki n'ibiryo!",
+    "otherPage": "Iyi ni indi paje",
+    "goback": "Kanda hano kugirango usubire inyuma"
   },
   "footer": {
     "text": "Awesomity Lab ni nziza"

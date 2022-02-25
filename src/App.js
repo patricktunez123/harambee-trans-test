@@ -1,15 +1,13 @@
+import { BrowserRouter as Router } from "react-router-dom";
 import { Suspense } from "react";
-import Footer from "./Components/Footer/Footer";
-import Loader from "./Components/Loaders/Loader";
-import Main from "./Components/Main/Main";
-import Nav from "./Components/Nav/Nav";
+import BaseRoutes from "./Routes";
 
 function App() {
   return (
-    <Suspense fallback={<Loader />}>
-      <Nav />
-      <Main />
-      <Footer />
+    <Suspense>
+      <Router>
+        <BaseRoutes />
+      </Router>
     </Suspense>
   );
 }

@@ -5,7 +5,9 @@
   "mainContent": {
     "title": "It is working!!",
     "desc1": "My names are,",
-    "desc2": "I love music and food!"
+    "desc2": "I love music and food!",
+    "otherPage": "This is an other page",
+    "goback": "Click here to Go Back"
   },
   "footer": {
     "text": "Awesomity Lab is awesome"
