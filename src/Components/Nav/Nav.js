@@ -27,7 +27,11 @@ const Nav = () => {
   return (
     <div className="harambe_nav">
       <Dropdown className="menus" overlay={menu} trigger={["click"]}>
-        <a className="ant-dropdown-link" onClick={(e) => e.preventDefault()}>
+        <a
+          href="/"
+          className="ant-dropdown-link"
+          onClick={(e) => e.preventDefault()}
+        >
           {t("navContent.changeLang")} <DownOutlined />
         </a>
       </Dropdown>
